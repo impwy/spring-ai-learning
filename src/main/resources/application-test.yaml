@@ -10,4 +10,4 @@ spring:
   ai:
     ollama:
       chat:
-        model: llama3  # 작업 2에서 pull받은 모델명으로 설정
+        model: gemma:2b  # 작업 2에서 pull받은 모델명으로 설정

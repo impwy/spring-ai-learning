@@ -3,6 +3,6 @@ spring:
     name: back-ai
   config:
     import: optional:file:.env[.properties]
-ai:
-  openai:
-    api-key: ${OPENAI_API_KEY}
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
