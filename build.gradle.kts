@@ -25,6 +25,7 @@ dependencies {
     implementation("org.springframework.ai:spring-ai-starter-model-openai")
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation(platform("org.springframework.ai:spring-ai-bom:2.0.1"))
 }
 dependencyManagement {
     imports {
