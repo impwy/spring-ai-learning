@@ -1,5 +1,6 @@
 package com.backai.ai.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +16,7 @@ public class AiController {
 
     public AiController(ChatService chatService) {this.chatService = chatService;}
 
-    @GetMapping
+    @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<String> streamChat(String message) {
         return chatService.streamChatResponse(message);
     }
